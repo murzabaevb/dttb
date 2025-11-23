@@ -213,7 +213,7 @@ These automatically configure the relevant antenna gains, feeder losses, and oth
 
 ---
 
-# 🧩 Command‑Line Interface (CLI)
+# Command‑Line Interface (CLI)
 
 The CLI provides:
 
