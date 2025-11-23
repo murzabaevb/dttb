@@ -1,0 +1,75 @@
+# PyCharm project files
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+env/
+venv/
+*.venv/
+
+# Virtual environments (common naming conventions)
+.env/
+.venvs/
+virtualenv/
+
+# Dependency lock files (if not using Poetry/PDM)
+# requirements.txt  # Comment out if you want to track this file
+requirements-dev.txt
+
+# Testing and coverage
+.coverage
+coverage.xml
+*.cover
+*.cache
+nosetests.xml
+pytest_cache/
+
+# Linting and formatting
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pylint.d/
+.flake8
+
+# Logs and temporary files
+*.log
+*.log.*
+*.tmp
+temp/
+
+# OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Editor backups
+*~
+*.bak
+*.swp
+*.swo
+
+# Documentation build outputs
+docs/_build/
+docs/build/
+
+# Miscellaneous
+*.sqlite3
+*.db
+*.pid
+*.gz
+*.zip
+*.tar.gz
+
+# Project-specific artifacts (add as needed)
+data/
+*.csv
+*.json
+*.txt  # Comment out if you want to track specific text files

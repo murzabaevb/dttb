@@ -90,6 +90,9 @@ def main() -> None:
     )
     print_case("Table 13 – Bands IV/V, Portable indoor / urban", t13_pi)
 
+    # Show values
+    for k, v in t13_fx.summary().items():
+        print(f"{k:25s}: {v}")
 
 if __name__ == "__main__":
     main()
