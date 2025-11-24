@@ -306,48 +306,37 @@ Debug prints:
 
 With default or recommended parameters:
 ```
-dvbt2 summary --mode FX --freq 650 --environment rural \
-              --modulation 256QAM --code-rate 2/3              
+dvbt2 summary --mode FX --freq 650 --environment rural --modulation 256QAM --code-rate 2/3              
 ```
 
 With override parameters as shown in the table:
 ```
-dvbt2 summary --mode FX --freq 650 --environment rural \
-              --modulation 256QAM --code-rate 2/3 \
-              --noise-bw 7.77e6 --feeder-loss 4 --ant-gain 11 \
-              --location-probability 0.7
+dvbt2 summary --mode FX --freq 650 --environment rural --modulation 256QAM --code-rate 2/3 
+--noise-bw 7.77e6 --feeder-loss 4 --ant-gain 11 --location-probability 0.7
 ```
 
 ### Portable outdoor/urban configuration in Table 13, Rec. ITU-R BT.2033-2
 
 With default or recommended parameters:
 ```
-dvbt2 summary --mode PO --freq 650 --environment rural \
-              --modulation 64QAM --code-rate 2/3              
+dvbt2 summary --mode PO --freq 650 --environment rural --modulation 64QAM --code-rate 2/3            
 ```
 
 With override parameters as shown in the table:
 ```
-dvbt2 summary --mode PO --freq 650 --environment urban \
-              --modulation 64QAM --code-rate 2/3 --noise-bw 7.77e6 \
-              --receiver-type portable --handheld-antenna integrated \
-              --location-probability 0.7
+dvbt2 summary --mode PO --freq 650 --environment urban --modulation 64QAM --code-rate 2/3 --noise-bw 7.77e6 --receiver-type portable --handheld-antenna integrated --location-probability 0.7
 ```
 
 ### Portable indoor/urban configuration in Table 13, Rec. ITU-R BT.2033-2
 
 With default or recommended parameters:
 ```
-dvbt2 summary --mode PI --freq 650 --environment urban \
-              --modulation 64QAM --code-rate 2/3              
+dvbt2 summary --mode PI --freq 650 --environment urban --modulation 64QAM --code-rate 2/3            
 ```
 
 With override parameters as shown in the table:
 ```
-dvbt2 summary --mode PI --freq 650 --environment urban \
-              --modulation 64QAM --code-rate 2/3 --noise-bw 7.77e6 \
-              --receiver-type portable --handheld-antenna integrated \
-              --location-probability 0.7
+dvbt2 summary --mode PI --freq 650 --environment urban --modulation 64QAM --code-rate 2/3 --noise-bw 7.77e6 --receiver-type portable --handheld-antenna integrated --location-probability 0.7
 ```
 
 ---
