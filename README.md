@@ -87,6 +87,10 @@ Install:
 ```bash
 pip install .
 ```
+Alternatively, you may install the package directly from GitHub:
+```bash
+pip install git+https://github.com/murzabaevb/dttb.git
+```
 
 Now the command:
 
