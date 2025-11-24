@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling >= 1.26"]
+requires = ["hatchling>=1.26"]
 build-backend = "hatchling.build"
 
 [project]
@@ -7,8 +7,7 @@ name = "dvbt2-calculator"
 version = "0.1.0"
 description = "DVB-T2 field-strength and equivalent median field-strength calculator following ITU-R BT.2033-2, BT.2036-5 and GE06."
 readme = "README.md"
-license = "GPL-3.0-or-later"
-license-files = ["LICEN[CS]E.*"]
+license = { text = "GPL-3.0-or-later" }
 requires-python = ">=3.10"
 
 authors = [
@@ -38,15 +37,13 @@ classifiers = [
   "Topic :: Utilities"
 ]
 
-dependencies = [
-  # Standard library is used for everything; no external deps required
-]
+dependencies = []
 
 [project.scripts]
-dvbt2 = "dvbt2_cli:main"
+dvbt2 = "dvbt2.dvbt2_cli:main"
 
-[tool.setuptools]
+[tool.hatch.build.targets.sdist]
+include = ["dvbt2", "README.md", "LICENSE*"]
+
+[tool.hatch.build.targets.wheel]
 packages = ["dvbt2"]
-
-[tool.setuptools.package-data]
-dvbt2 = ["*.txt", "*.md"]

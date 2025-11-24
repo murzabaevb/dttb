@@ -232,22 +232,19 @@ The CLI provides:
 ### Full Summary
 
 ```
-dvbt2 summary --mode FX --freq 650 --environment urban \
-              --modulation 64QAM --code-rate 3/5
+dvbt2 summary --mode FX --freq 650 --environment urban --modulation 64QAM --code-rate 3/5
 ```
 
 ### E_med Only
 
 ```
-dvbt2 emed --mode PI --freq 650 --environment urban \
-           --modulation 16QAM --code-rate 1/2
+dvbt2 emed --mode PI --freq 650 --environment urban --modulation 16QAM --code-rate 1/2
 ```
 
 ### Debug Mode
 
 ```
-dvbt2 debug --mode PO --freq 650 --environment rural \
-            --modulation 64QAM --code-rate 3/4
+dvbt2 debug --mode PO --freq 650 --environment rural --modulation 64QAM --code-rate 3/4
 ```
 
 Debug prints:
@@ -300,6 +297,37 @@ Debug prints:
 ---
 
 ## Example CLI Scenarios
+
+### Fixed configuration in Table 13, Rec. ITU-R BT.2033-2
+
+With default or recommended parameters:
+```
+dvbt2 summary --mode FX --freq 650 --environment rural \
+              --modulation 256QAM --code-rate 2/3              
+```
+
+With override parameters as shown in the table:
+```
+dvbt2 summary --mode FX --freq 650 --environment rural \
+              --modulation 256QAM --code-rate 2/3 \
+              --noise-bw 7.77e6 --feeder-loss 4 --ant-gain 11 \
+              --location-probability 0.7
+```
+
+### Portable outdoor/urban configuration in Table 13, Rec. ITU-R BT.2033-2
+
+With default or recommended parameters:
+```
+dvbt2 summary --mode PO --freq 650 --environment rural \
+              --modulation 64QAM --code-rate 2/3              
+```
+
+With override parameters as shown in the table:
+```
+dvbt2 summary --mode PO --freq 650 --environment rural \
+              --modulation 64QAM --code-rate 2/3 \
+              --noise-bw 7.77e6 --height-loss 0 --location-probability 0.7
+```
 
 ### Mobile at 650 MHz (rural)
 

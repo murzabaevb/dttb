@@ -272,7 +272,7 @@ class DVBT2:
 
     # For PO/PI only: portable vs handheld receiver
     receiver_type: ReceiverType = "portable"  # "portable", "handheld"
-    handheld_antenna_type: HandheldAntennaType = "integrated"  # "integrated", "external"
+    handheld_antenna_type: HandheldAntennaType = "external"  # "integrated", "external"
 
     # Indoor building class for PI (UHF)
     building_class: BuildingClass = "low"  # "high", "medium", "low"
@@ -288,7 +288,7 @@ class DVBT2:
     building_entry_loss_db: float | None = None
     sigma_macro_db: float = 5.5
     sigma_building_db: float | None = None
-    location_probability: float = 0.95     # 0.95=95%, 0.9=90% etc.
+    location_probability: float = 0.7     # 0.95=95%, 0.9=90% etc.
 
 
     # -------------------------------------------------------------------------
@@ -981,7 +981,7 @@ class DVBT2:
             modulation=modulation,
             code_rate=code_rate,
             receiver_type="portable",  # ignored for FX
-            handheld_antenna_type="integrated",  # ignored for FX
+            handheld_antenna_type="external",  # ignored for FX
             **overrides,
         )
 
@@ -1002,7 +1002,7 @@ class DVBT2:
             modulation=modulation,
             code_rate=code_rate,
             receiver_type="portable",
-            handheld_antenna_type="integrated",
+            handheld_antenna_type="external",
             **overrides,
         )
 
