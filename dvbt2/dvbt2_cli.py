@@ -247,7 +247,7 @@ def _add_common_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--height-loss",
         type=float,
-        help="Override height loss Lh (dB). If not set, GE06 log-frequency model is used.",
+        help="Override height loss Lh (dB). If not set, GE06 is used.",
     )
     parser.add_argument(
         "--building-loss",
@@ -268,7 +268,7 @@ def _add_common_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--location-probability",
         type=float,
-        help="Location probability (0.01–0.99). Default is 0.95 (95%%).",
+        help="Location probability (0.01–0.99). Default is 0.7 (70%%).",
     )
 
 
