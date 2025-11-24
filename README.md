@@ -306,7 +306,7 @@ Debug prints:
 
 With default or recommended parameters:
 ```
-dvbt2 summary --mode FX --freq 650 --environment rural --modulation 256QAM --code-rate 2/3              
+dvbt2 summary --mode FX --freq 650 --environment rural --modulation 256QAM --code-rate 2/3
 ```
 
 With override parameters as shown in the table:
@@ -319,7 +319,7 @@ dvbt2 summary --mode FX --freq 650 --environment rural --modulation 256QAM --cod
 
 With default or recommended parameters:
 ```
-dvbt2 summary --mode PO --freq 650 --environment rural --modulation 64QAM --code-rate 2/3            
+dvbt2 summary --mode PO --freq 650 --environment rural --modulation 64QAM --code-rate 2/3
 ```
 
 With override parameters as shown in the table:
@@ -331,7 +331,7 @@ dvbt2 summary --mode PO --freq 650 --environment urban --modulation 64QAM --code
 
 With default or recommended parameters:
 ```
-dvbt2 summary --mode PI --freq 650 --environment urban --modulation 64QAM --code-rate 2/3            
+dvbt2 summary --mode PI --freq 650 --environment urban --modulation 64QAM --code-rate 2/3
 ```
 
 With override parameters as shown in the table:
