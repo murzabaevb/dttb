@@ -351,35 +351,3 @@ dvbt2 summary --mode PI --freq 650 --environment urban \
 # License
 
 This project is licensed under the GNU General Public License. See the LICENSE.txt file for details.
-
-
-```aiignore
-    # Internal variable and descriptions for output (used in summary())
-    HUMAN_KEYS: ClassVar[Dict[str, str]] = {
-        "freq_mhz": "Frequency (MHz)",
-        "band": "DVB-T2 Band",
-        "reception_mode": "Reception Mode",
-        "environment": "Environment",
-        "modulation": "Modulation",
-        "code_rate": "Code Rate",
-        "receiver_type": "Receiver Type",
-        "handheld_antenna_type": "Handheld Antenna Type",
-        "C/N_required_dB": "Required C/N (dB)",
-        "Pn_dbw": "Rx Noise Input Power Pn (dBW)",
-        "Ps_min_dbw": "Minimum Rx Input Power Ps_min (dBW)",
-        "G_dbd": "Antenna Gain G (dBd)",
-        "Lf_db": "Feeder Loss Lf (dB)",
-        "Aa_dbm2": "Effective Antenna Aperture Aa (dBm²)",
-        "phi_min_dbw_per_m2": "Minimum PFD φ_min (dB(W/m²))",
-        "Emin_dbuV_per_m": "Equiv. Minimum Field Strength E_min (dBµV/m)",
-        "Pmmn_db": "Man-Made Noise Pmmn (dB)",
-        "Lh_db": "Height Loss Lh (dB)",
-        "Lb_db": "Building Entry Loss Lb (dB)",
-        "sigma_b_db": "Building Std Dev σ_b (dB)",
-        "sigma_m_db": "Macro-scale Std. Dev. σ_m (dB)",
-        "sigma_total_db": "Total Std Dev σ_total (dB)",
-        "mu": "Distribution Factor µ",
-        "Cl_db": "Location Correction C_l (dB)",
-        "Emed_dbuV_per_m": "Min. Median Equiv. Field Strength E_med (dBµV/m)",
-    }
-```
