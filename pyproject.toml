@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dvbt2-calculator"
-version = "0.1.0"
+version = "0.1.2"
 description = "DVB-T2 field-strength and equivalent median field-strength calculator following ITU-R BT.2033-2, BT.2036-5 and GE06."
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }

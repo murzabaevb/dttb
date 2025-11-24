@@ -1172,7 +1172,7 @@ class DVBT2:
             # ------------------------------------------------------------------
             # System performance & receiver noise (C/N, F, B, Pn, Ps_min)
             # ------------------------------------------------------------------
-            "C/N_required_dB": self.cn_required_db(),  # Minimum C/N required by system
+            "C/N_required_dB": self.cn_required_db(),  # Minimum C/N (dB) required by system
             "noise_figure_db": self.noise_figure_db,  # F (dB)
             "noise_bw_hz": self.noise_bw_hz,  # B (Hz)
             "Pn_dbw": self.noise_power_dbw(),  # Receiver noise input power Pn (dBW)
@@ -1213,7 +1213,7 @@ class DVBT2:
             # Final planning value (Emed)
             # ------------------------------------------------------------------
             "Emed_dbuV_per_m": self.Emed_dbuV_per_m(),
-            # Minimum median equivalent field strength Emed
+            # Minimum median equivalent field strength Emed (dB(µV/m))
 
             # ------------------------------------------------------------------
             # Extra debug info (not in BT.2033 tables, but useful)

@@ -324,24 +324,26 @@ dvbt2 summary --mode PO --freq 650 --environment rural \
 
 With override parameters as shown in the table:
 ```
-dvbt2 summary --mode PO --freq 650 --environment rural \
-              --modulation 64QAM --code-rate 2/3 \
-              --noise-bw 7.77e6 --height-loss 0 --location-probability 0.7
+dvbt2 summary --mode PO --freq 650 --environment urban \
+              --modulation 64QAM --code-rate 2/3 --noise-bw 7.77e6 \
+              --receiver-type portable --handheld-antenna integrated \
+              --location-probability 0.7
 ```
 
-### Mobile at 650 MHz (rural)
+### Portable indoor/urban configuration in Table 13, Rec. ITU-R BT.2033-2
 
+With default or recommended parameters:
 ```
-dvbt2 summary --mode MO --freq 650 --environment rural \
-              --modulation 16QAM --code-rate 3/5
+dvbt2 summary --mode PI --freq 650 --environment urban \
+              --modulation 64QAM --code-rate 2/3              
 ```
 
-### Indoor handheld (low building class)
-
+With override parameters as shown in the table:
 ```
-dvbt2 emed --mode PI --receiver-type handheld --handheld-antenna integrated \
-           --building-class low --freq 650 --environment urban \
-           --modulation 64QAM --code-rate 2/3
+dvbt2 summary --mode PI --freq 650 --environment urban \
+              --modulation 64QAM --code-rate 2/3 --noise-bw 7.77e6 \
+              --receiver-type portable --handheld-antenna integrated \
+              --location-probability 0.7
 ```
 
 ---
@@ -350,3 +352,34 @@ dvbt2 emed --mode PI --receiver-type handheld --handheld-antenna integrated \
 
 This project is licensed under the GNU General Public License. See the LICENSE.txt file for details.
 
+
+```aiignore
+    # Internal variable and descriptions for output (used in summary())
+    HUMAN_KEYS: ClassVar[Dict[str, str]] = {
+        "freq_mhz": "Frequency (MHz)",
+        "band": "DVB-T2 Band",
+        "reception_mode": "Reception Mode",
+        "environment": "Environment",
+        "modulation": "Modulation",
+        "code_rate": "Code Rate",
+        "receiver_type": "Receiver Type",
+        "handheld_antenna_type": "Handheld Antenna Type",
+        "C/N_required_dB": "Required C/N (dB)",
+        "Pn_dbw": "Rx Noise Input Power Pn (dBW)",
+        "Ps_min_dbw": "Minimum Rx Input Power Ps_min (dBW)",
+        "G_dbd": "Antenna Gain G (dBd)",
+        "Lf_db": "Feeder Loss Lf (dB)",
+        "Aa_dbm2": "Effective Antenna Aperture Aa (dBm²)",
+        "phi_min_dbw_per_m2": "Minimum PFD φ_min (dB(W/m²))",
+        "Emin_dbuV_per_m": "Equiv. Minimum Field Strength E_min (dBµV/m)",
+        "Pmmn_db": "Man-Made Noise Pmmn (dB)",
+        "Lh_db": "Height Loss Lh (dB)",
+        "Lb_db": "Building Entry Loss Lb (dB)",
+        "sigma_b_db": "Building Std Dev σ_b (dB)",
+        "sigma_m_db": "Macro-scale Std. Dev. σ_m (dB)",
+        "sigma_total_db": "Total Std Dev σ_total (dB)",
+        "mu": "Distribution Factor µ",
+        "Cl_db": "Location Correction C_l (dB)",
+        "Emed_dbuV_per_m": "Min. Median Equiv. Field Strength E_med (dBµV/m)",
+    }
+```

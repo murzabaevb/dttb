@@ -6,7 +6,7 @@ in your Python path:
     from dvbt2 import DVBT2
 """
 
-from ..dvbt2 import DVBT2
+from dvbt2 import DVBT2
 
 
 def print_case(title: str, inst: DVBT2) -> None:
