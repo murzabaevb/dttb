@@ -87,10 +87,10 @@ Install:
 ```bash
 pip install .
 ```
-Alternatively, you may install the package directly from GitHub:
-```bash
-pip install git+https://github.com/murzabaevb/dttb.git
-```
+If there is no Python installed, then 
+1. Install [Python](https://www.python.org/) from its official website
+2. Install pip `python -m pip install --upgrade pip`
+3. Install DVB-T2 Calculator directly from the Github `pip install git+https://github.com/murzabaevb/dttb.git`
 
 Now the command:
 
