@@ -311,8 +311,7 @@ dvbt2 summary --mode FX --freq 650 --environment rural --modulation 256QAM --cod
 
 With override parameters as shown in the table:
 ```
-dvbt2 summary --mode FX --freq 650 --environment rural --modulation 256QAM --code-rate 2/3 
---noise-bw 7.77e6 --feeder-loss 4 --ant-gain 11 --location-probability 0.7
+dvbt2 summary --mode FX --freq 650 --environment rural --modulation 256QAM --code-rate 2/3 --noise-bw 7.77e6 --feeder-loss 4 --ant-gain 11 --location-probability 0.7
 ```
 
 ### Portable outdoor/urban configuration in Table 13, Rec. ITU-R BT.2033-2
